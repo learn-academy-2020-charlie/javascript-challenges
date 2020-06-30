@@ -13,11 +13,26 @@
 //   console.log("Keep coding")
 // }
 
-var trafficLight = "violet"
- if (trafficLight === "green"){
-   console.log("go");
- } else if (trafficLight === "yellow") {
-   console.log("slow down");
- } else{
-   console.log("stop");
- }
+// var trafficLight = "violet"
+//  if (trafficLight === "green"){
+//    console.log("go");
+//  } else if (trafficLight === "yellow") {
+//    console.log("slow down");
+//  } else{
+//    console.log("stop");
+//  }
+
+// Write an if/else statement that takes two variables of numbers and outputs the larger number, 
+// or logs equal if the numbers are the same.
+
+
+var numOne = 100;
+var numTwo = 100;
+
+if (numOne > numTwo) {
+  console.log(numOne);
+} else if (numTwo > numOne) {
+  console.log(numTwo);
+} else {
+  console.log("EQUAL!")
+}
