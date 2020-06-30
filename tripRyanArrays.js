@@ -69,13 +69,22 @@
 //console.log(numSet.indexOf(2));
 //console.log(numSet.lastIndexOf(2));
 
-var chars = ["y", "a", "r", "r", "a"];
-//console.log(chars.join(""));
+// var chars = ["y", "a", "r", "r", "a"];
+// //console.log(chars.join(""));
 
-var charsReversed = chars.reverse();
+// var charsReversed = chars.reverse();
 
-console.log("This is chars: " + chars);
-console.log("This is charsReversed: " + charsReversed);
+// console.log("This is chars: " + chars);
+// console.log("This is charsReversed: " + charsReversed);
 
-console.log(charsReversed.join("-"));
-console.log(charsReversed.join(""));
+// console.log(charsReversed.join("-"));
+// console.log(charsReversed.join(""));
+
+var arr1 = ["Andee", "Sarah", "Rachel"]
+var arr2 = ["Trip", "Ryan", "Miguel"]
+
+// console.log(arr1.reverse())
+// console.log(arr2.reverse())
+
+newArr = arr1.concat(arr2);
+console.log(newArr.sort())
