@@ -51,7 +51,7 @@
 
 // Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available.
 
-var gradePercentage = 100
+var gradePercentage = 0
 if (gradePercentage === 100){
   console.log("perfect score");
 } else if (gradePercentage >= 90){
