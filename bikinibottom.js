@@ -5,10 +5,19 @@
 //     console.log("out of budget");
 // }
 
-var stomach = "hungry"
+// var stomach = "hungry"
+//
+// if (stomach === "hungry") {
+//   console.log("Eat food")
+// } else {
+//   console.log("Keep coding")
+// }
 
-if (stomach === "hungry") {
-  console.log("Eat food")
-} else {
-  console.log("Keep coding")
-}
+var trafficLight = "violet"
+ if (trafficLight === "green"){
+   console.log("go");
+ } else if (trafficLight === "yellow") {
+   console.log("slow down");
+ } else{
+   console.log("stop");
+ }
