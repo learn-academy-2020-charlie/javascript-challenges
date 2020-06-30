@@ -39,12 +39,31 @@
 
 //Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
 
-var number = 4;
+// var number = 4;
+//
+// if (number === 0){
+//   console.log("zero");
+// } else if (number % 2 === 0) {
+//   console.log("even");
+// } else if (number % 2 !== 0) {
+//   console.log("odd");
+// }
 
-if (number === 0){
-  console.log("zero");
-} else if (number % 2 === 0) {
-  console.log("even");
-} else if (number % 2 !== 0) {
-  console.log("odd");
+// Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available.
+
+var gradePercentage = 100
+if (gradePercentage === 100){
+  console.log("perfect score");
+} else if (gradePercentage >= 90){
+  console.log("A");
+} else if (gradePercentage >= 80){
+  console.log("B");
+} else if (gradePercentage >= 70){
+  console.log("C");
+} else if ( gradePercentage >= 60){
+  console.log("D");
+} else if (gradePercentage > 0){
+  console.log("F");
+} else {
+  console.log("No grade available");
 }
