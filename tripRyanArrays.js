@@ -40,3 +40,42 @@
 
 // console.log(newNums.concat(nums));
 
+// ---------------------Challenges 3-5-----------------
+// Consider this variable:
+//   var numSet = [2, 13, 6, 8, 4, 2]
+// Write the code that finds the index of the first appearance of the number 2.
+
+// Write the code that finds the index of the last appearance of the number 2.
+
+// Consider this variable:
+//  var chars = ["y", "a", "r", "r", "a"]
+// Write the code that brings all the letters in the chars array together into a string.
+
+// Write the code that reverses the order of the letters in the chars array and saves it into a variable called charsReversed.
+
+// Write the code that brings all the letters in the charsReversed array together into a string with a hyphen between each letter.
+
+// Write the code that brings all the letters in the charsReversed Array together into a string without separators.
+
+// Create two arrays consisting of three first names of your cohort members in each.
+// Sort the names in alphabetical order.
+
+// Sort the names in reverse alphabetical order.
+
+// Sort all the names in alphabetical order. Hint: Combine the arrays into a single array.
+
+//var numSet  = [ 2, 13, 6, 8, 4, 12, 2];
+
+//console.log(numSet.indexOf(2));
+//console.log(numSet.lastIndexOf(2));
+
+var chars = ["y", "a", "r", "r", "a"];
+//console.log(chars.join(""));
+
+var charsReversed = chars.reverse();
+
+console.log("This is chars: " + chars);
+console.log("This is charsReversed: " + charsReversed);
+
+console.log(charsReversed.join("-"));
+console.log(charsReversed.join(""));
