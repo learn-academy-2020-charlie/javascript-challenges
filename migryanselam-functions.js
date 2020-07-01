@@ -98,3 +98,23 @@ if (language === "es") {
 console.log(helloWorld("fsdfsdhsd"))
 
 // The Pluralizer: Write a function named pluralizer that takes 2 arguments, a number and a singular noun and returns the number and pluralized form of the noun, if necessary
+
+const animalPluralizer = (num, noun) => {
+  if (num ===1){
+    return `${num} ${noun}`
+  } else if (num>1){
+    if (noun === "octopus"){
+      return `${num} octopi`
+    }
+    else if (noun==="goose"){
+      return `${num} geese`
+    }
+    else if (noun === "child"){
+      return `${num} children`
+    }
+    else {
+      return `${num} ${noun}s`
+    }
+  }
+}
+console.log(animalPluralizer(3, "child"));
