@@ -12,7 +12,7 @@
 // for (let i = 1; i <21; i++){
 //   console.log(i*3);
 // }
-// 
+//
 // for (let i = 1; i <21; i++){
 //   if (i % 2 == 0) {
 //     console.log(i);
@@ -20,3 +20,17 @@
 //     console.log("ODD");
 //   }
 // }
+
+//Challenge 2
+// Looping over an array. Consider this variable:
+// var nums = [3, 57, -9, 20, 67]
+// Create a loop that will log the highest number from the array. Expected output --> 67
+// Create a loop that will log the lowest number from the array Expected output --> -9
+// Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
+var nums = [3, 57, -9, 20, 67]
+for (var i = 0; i < nums.length; i++) {
+  console.log(i);
+  if (nums[i] < nums[i+1]) {
+    
+  }
+}
