@@ -77,3 +77,53 @@ for (var i = 0; i < nums.length; i++) {
 // }
 //
 // console.log(oddOrEven(73));
+
+//4
+// Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
+//function named triple that multiplies number by 3
+const triple = (number) => {
+// multiply number by 3
+  return number * 3
+}
+console.log(triple(12));
+
+//5
+//Write a function named multiply that takes two numbers as arguments and returns the result of one of the numbers multiplied by the other.
+//function named multiply with 2 arguments
+const multiply = (numb1, numb2) => {
+//multiply numb1 by numb2
+    return numb1 * numb2
+}
+console.log(multiply(5, -8));
+
+//6
+//Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
+// function named divisibleBy takes 2 arguments
+const divisibleBy = (numb1, numb2) => {
+// check if numb1 is divisble by numb2 using
+  if (numb1 % numb2 == 0) {
+// return "numb1 is evenly divisible by numb2".
+    return `${numb1} is evenly divisible by ${numb2}`
+}
+}
+console.log(divisibleBy(27, 2));
+
+
+//7
+//Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
+//function named assignGrade that tells letter grade from number
+const assignGrade = (numGrade) => {
+//check numGrade and assign letter numGrade
+    if (numGrade >= 90) {
+      return "A"
+    } else if (numGrade >= 80) {
+      return "B"
+    } else if (numGrade >= 70) {
+      return "C"
+    } else if (numGrade >= 60) {
+      return "D"
+    } else {
+      return "F"
+    }
+  }
+console.log(assignGrade (98));
