@@ -19,3 +19,30 @@ const trinity = (array) => {
 
 // call function
 console.log(trinity(testArr1));
+//2
+//Write a function that takes in an array and returns a new array with only odd numbers.
+var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+//make and name a function that returns only odd from testArr2
+const checkOdd = (array) => {
+  //make new/empty array to store odd numbers
+  let oddArray =[]
+  //create loop to look through testArr2
+  for (var i = 0; i < array.length; i++) {
+    //check if number is odd by modulo
+    if (array[i] % 2 !== 0) {
+      // if it is odd, add to new array
+      oddArray.push(array[i])
+    }
+  }
+  return oddArray
+}
+console.log(checkOdd(testArr2));
+console.log(checkOdd(testArr1));
+
+
+
+
+
+
+
+// Expected output --> [-7, 3, 5, 13]
