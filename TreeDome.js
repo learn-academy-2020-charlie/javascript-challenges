@@ -58,3 +58,23 @@ const captilizeIt = (someMessage) => {
 console.log(captilizeIt(myMessage));
 
 //Expected output --> "HELLO THERE"
+
+//4
+//Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
+var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+// name/make function lettersOnly accepts an arrays
+const lettersOnly = (array) => {
+  // create empty letterArray
+  let letterArray = []
+  // create a loops
+  for (var i = 0; i < array.length; i++) {
+    if (typeof array[i]== "string") {
+      // if type string push to letterArray
+      letterArray.push (array[i])
+    }
+  }
+// join letters in letterArray into string with .join("")
+return letterArray.join("")
+}
+console.log(lettersOnly(comboArr));
+// Expected output --> "nicework"
