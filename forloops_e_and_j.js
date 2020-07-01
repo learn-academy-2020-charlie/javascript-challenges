@@ -166,3 +166,30 @@
 // console.log(helloWorld("de"));
 // console.log(helloWorld("mi"));
 // console.log(helloWorld("abc"));
+
+// //3
+//The Pluralizer: Write a function named pluralizer that takes 2 arguments, a number and a singular noun and returns the number and pluralized form of the noun, if necessary
+
+// const pluralizer = (5, cat)
+//
+// Expected outcome --> "5 cats"
+//
+// const pluralizer = (1, dog)
+//
+// Expected outcome --> "1 dog"
+//
+// Bonus: Make it handle a few collective nouns like "sheep", "goose", "child", "person" and "species"
+
+// function named pluralizer takes 2 arguments (numb, singularNoun)
+const pluralizer = (numb, singularNoun) => {
+// return numb and pluarlized noun if needed
+  if (numb !== 1) {
+    return `${numb} ${singularNoun}s`
+  } else {
+      return `${numb} ${singularNoun}`
+  }
+}
+console.log(pluralizer(1, dog));
+console.log(pluralizer(1, cat));
+console.log(pluralizer(5, horse));
+console.log(pluralizer(0, zebra));
