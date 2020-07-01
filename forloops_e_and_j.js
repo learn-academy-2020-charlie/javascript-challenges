@@ -28,9 +28,14 @@
 // Create a loop that will log the lowest number from the array Expected output --> -9
 // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
 var nums = [3, 57, -9, 20, 67]
+var highestNum = null;
+
 for (var i = 0; i < nums.length; i++) {
-  console.log(i);
   if (nums[i] < nums[i+1]) {
-    
+    highestNum = nums[i+1]
+  } else {
+    highestNum =nums[i]
   }
 }
+
+console.log(highestNum);
