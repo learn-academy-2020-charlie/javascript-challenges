@@ -48,17 +48,53 @@
 
 //(7) Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
 
-const assignGrade = (num) => {
-  if (num >= 90) {
-    return "A"
-  } else if (num >= 80) {
-    return "B"
-  } else if (num >= 70) {
-    return "C"
-  } else if (num >= 60) {
-    return "D"
-  } else {
-    return "F"
-  }
+// const assignGrade = (num) => {
+//   if (num >= 90) {
+//     return "A"
+//   } else if (num >= 80) {
+//     return "B"
+//   } else if (num >= 70) {
+//     return "C"
+//   } else if (num >= 60) {
+//     return "D"
+//   } else {
+//     return "F"
+//   }
+// }
+// console.log(assignGrade(30));
+
+
+// Test your functions with multiple calls
+
+// // What number's bigger: Write a function named greaterNum that takes 2 arguments, both numbers and returns whichever number is the greater (higher) number
+// // setup a function that takes two arguments
+// const highNumber = (num1, num2) => {
+// // use if statement to determine which argument is the higher number
+// if (num1 > num2) {
+//   return num1;
+// } else if (num2 > num1) {
+//   return num2;
+// } else {
+//   return "Equal";
+// }
+// //return higher number
+// }
+// console.log(highNumber(82, 24))
+
+// The World Translator: Write a function named helloWorld that takes 1 argument, a language code (e.g. "es", "de", "en") and returns "Hello, World" for the given language, for at least 3 languages (it should default to returning English)
+
+const helloWorld = (language) => {
+// use if else statement to find the language
+if (language === "es") {
+  return "Hola Mundo";
+} else if (language === "de") {
+  return "Hallo Welt";
+} else if (language === "ti") {
+  return "Salaam Alem";
+} else {
+  return "Hello, World"
 }
-console.log(assignGrade(30));
+}
+console.log(helloWorld("fsdfsdhsd"))
+
+// The Pluralizer: Write a function named pluralizer that takes 2 arguments, a number and a singular noun and returns the number and pluralized form of the noun, if necessary
