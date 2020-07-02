@@ -49,7 +49,7 @@
 
 // console.log(upperCase(myMessage));
 
-// (4) Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
+// (4) (INCOMPLETE) Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
 // // Expected output --> "nicework"
 var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
 
