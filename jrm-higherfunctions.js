@@ -9,8 +9,14 @@ var arr1 = [3, 9, 15, 4, 10]
 // }
 console.log(mult10);
 // Write a function that takes in an array and returns a new array with only odd numbers.
-// var arr2 = [2, 7, 3, 5, 8, 10, 13]
-//
+var arr2 = [2, 7, 3, 5, 8, 10, 13]
+
+const oddArray = (array) => {
+   return array.filter(value => {
+     return value % 2 !==0
+  })
+  }
+console.log(oddArray(arr2));
 // Expected output --> [7, 3, 5, 13]
 //
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
