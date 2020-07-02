@@ -18,18 +18,37 @@
 // console.log(newArr(arr1));
 
 // CHALLENGE 2
-// Write a function that takes in an array and returns a new array with only odd numbers. Expected output --> [7, 3, 5, 13]
+// // Write a function that takes in an array and returns a new array with only odd numbers. Expected output --> [7, 3, 5, 13]
 
-var arr2 = [2, 7, 3, 5, 8, 10, 13]
+// var arr2 = [2, 7, 3, 5, 8, 10, 13]
 
-//Create a function to accepts an array
-const newArray = (array) => {
-//Create a variable to hold new filtered array to draw odd numbers using modulo (%2!==0)
-  let oddNums = array.filter (value => {
-//Utilize the filter method to draw odd numbers
-    return value %2 !==0
+// //Create a function to accepts an array
+// const newArray = (array) => {
+// //Create a variable to hold new filtered array to draw odd numbers using modulo (%2!==0)
+//   let oddNums = array.filter (value => {
+// //Utilize the filter method to draw odd numbers
+//     return value %2 !==0
+//   })
+// //Return new filtered array
+//   return oddNums
+// }
+// console.log(newArray(arr2))
+
+// Challenge 3
+// Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"] 
+// Expected output --> "nicework"
+
+// create a function that accepts any array
+const findLetters = (array) => {
+  // create a variable to hold a new filtered array
+  let letters = array.filter(value => {
+    // use typeof method using "string" to get the letters in the  new array
+    return typeof value === "string"
   })
-//Return new filtered array
-  return oddNums
+  // use join to convert the new array into the string and return it
+  return letters.join("")
 }
-console.log(newArray(arr2))
+//call the function
+console.log(findLetters(comboArr));
+
