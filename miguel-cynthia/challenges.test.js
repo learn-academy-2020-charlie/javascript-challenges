@@ -61,10 +61,11 @@ const { TestScheduler } = require("jest")
 //     })
 // })
 
-// //create a function that returns whether or not you are in budget.
+//create a function that returns whether or not you are in budget.
 // var number1 = 150
 // var number2 = 400
 // var number3 = "blue"
+
 // const inBudget = (number) => {
 //     if (number <= 300) {
 //         return "in budget"
@@ -79,32 +80,36 @@ const { TestScheduler } = require("jest")
 
 //create a test called smallNum for a function that takes in 2 arguments and determines the smaller number in the argument
 
-describe("smallNum", () => {
-    test("return smaller number", () => {
-        expect(smallNum(num1, num2)).toEqual(num2)
-        expect(smallNum(num3, num4)).toEqual(num3)
-        expect(smallNum(num5, num6)).toEqual("numbers are equal")
-        expect(smallNum(num7, num8)).toEqual("not a number")
-    })
-})
+// describe("smallNum", () => {
+//     test("return smaller number", () => {
+//         expect(smallNum(num1, num2)).toEqual(num2)
+//         expect(smallNum(num3, num4)).toEqual(num3)
+//         expect(smallNum(num5, num6)).toEqual("numbers are equal")
+//         expect(smallNum(num7, num8)).toEqual("not a number")
+//     })
+// })
 
 //create a function that returns the smaller number from two arguments
-var num1 = 100
-var num2 = 50
-var num3 = 33
-var num4 = 90
-var num5 = 370
-var num6 = 370
-var num7 = 87
-var num8 = "blue"
-const smallNum = (arg1, arg2) => {
-    if (arg1 > arg2) {
-        return arg2
-    } else if (arg1 < arg2) {
-        return arg1
-    } else if (arg1 === arg2) {
-        return "numbers are equal"
-    } else {
-        return "not a number"
-    }
-}
+// var num1 = 100
+// var num2 = 50
+// var num3 = 33
+// var num4 = 90
+// var num5 = 370
+// var num6 = 370
+// var num7 = 87
+// var num8 = "blue"
+
+// const smallNum = (arg1, arg2) => {
+//     if (arg1 > arg2) {
+//         return arg2
+//     } else if (arg1 < arg2) {
+//         return arg1
+//     } else if (arg1 === arg2) {
+//         return "numbers are equal"
+//     } else {
+//         return "not a number"
+//     }
+// }
+
+//CHALLENGE 5
+Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass.
