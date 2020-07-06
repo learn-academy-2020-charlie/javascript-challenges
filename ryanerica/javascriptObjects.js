@@ -12,13 +12,23 @@
 //console.log(person.homePlanet);
 
 //Update the person object with a method that logs "Arthur Dent is from planet Earth".
-var person = {
-  firstName: "Arthur",
-  lastName: "Dent",
-  homePlanet: "Earth",
-  aboutThisPerson: function(){
-      return `${this.firstName} ${this.lastName} is from planet ${this.homePlanet}`
-  }
-}
+// var person = {
+//   firstName: "Arthur",
+//   lastName: "Dent",
+//   homePlanet: "Earth",
+//   aboutThisPerson: function(){
+//       return `${this.firstName} ${this.lastName} is from planet ${this.homePlanet}`
+//   }
+// }
+//
+// console.log(person.aboutThisPerson())
 
-console.log(person.aboutThisPerson())
+//Consider this variable:
+var product = {
+  name: "chair", price: 14.99
+}
+//Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+const describeProduct = (item) => {
+  return `The product is a ${item.name}. It costs ${item.price}`
+}
+console.log(describeProduct(product));
