@@ -50,3 +50,21 @@
 //     }
 // }
 
+//CHALLENGE 4:
+
+describe ("numbCompare", () => {
+  test ("return the smaller number from the two arguments", () => {
+    expect (numbCompare(numb1)).toEqual (`${arg1} is the smaller number`)
+    expect (numbCompare(numb2)).toEqual (`${arg2} is the smaller number`)
+  })
+})
+
+var numb1 = 5
+var numb2 = 10
+const numbCompare = (arg1, arg2) => {
+  if (arg1 < arg2) {
+    return `${arg1} is the smaller number`
+  } else if (arg1 > arg2) {
+    return `${arg2} is the smaller number`
+  }
+}
