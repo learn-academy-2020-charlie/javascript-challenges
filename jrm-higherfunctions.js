@@ -20,4 +20,12 @@ console.log(oddArray(arr2));
 // Expected output --> [7, 3, 5, 13]
 //
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"] Expected output --> "nicework"
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"] //Expected output --> "nicework"
+const compliment = (array) => {
+  let newArray = array.filter (value => {
+    return typeof value === "string"
+    // stringOnly.join (typeof value ===)
+  })
+  return newArray.join("")
+}
+console.log(compliment(comboArr));
