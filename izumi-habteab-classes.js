@@ -1,4 +1,4 @@
-//----------- ----------- CHALLENGE (1) Coffee Maker ----------- ----------- ---
+//----------- ----------- CHALLENGE (1) Coffee Maker ----------- ----------- --
 class Coffee {
   constructor(cream, sugar, type="Black"){
     this.type = type.toLowerCase()
@@ -32,15 +32,40 @@ class Coffee {
 var blackCoffee = new Coffee ()
 var latte = new Coffee (1, 2, "latte")
 
-console.log("Here's your " + blackCoffee.type + " coffee.")
+      // console.log("Here's your " + blackCoffee.type + " coffee.")
 // (b)Write the code that makes a coffee with 1 cream and 2 sugars.
-console.log(latte.coffeeProfile())
+      // console.log(latte.coffeeProfile())
 // (c) Write the code that makes a coffee with 2 sugars. Then write the code that outputs the coffee's profile.
 var latte2 = new Coffee (0, 2, "coffee")
-console.log(latte2.coffeeProfile());
+      //console.log(latte2.coffeeProfile());
 
-//----------- ----------- CHALLENGE (2) Latte Maker ----------- ----------- ----
-      //skipped
+//----------- ----------- CHALLENGE (2) Latte Maker ----------- ----------- ---
+//Write a Latte class that receives a flavor, a milk type and a number of shots.
+class Latte {
+  constructor (){
+    this.flavor = ["regular", "vanilla", "hazelnut"]
+    this.milkType = ["whole milk", "soy milk", "oat milk"]
+    this.shots += 1
+  }
+//Write a method for your Latte class that outputs the latte's profile.
+
+  shotsNumber () {
+    if (this.shots < 1){
+      return "decaf"
+    } else if (this.shots = 1){
+      return "single-shot"
+    } else {
+      return `${this.shots} shots`
+    }
+  }
+  latteProfile () {
+    return `Here is your ${this.flavor}, ${this.milkType}, ${this.shotsNum} latte.`
+  }
+}
+//Write the code that makes a regular, single shot latte. Then, log the latte's profile.
+var myLatte = new Latte ()
+
+console.log(myLatte.latteProfile());
 
 //----------- ----------- RACHAEL'S CLASS EXAMPLE: ----------- ----------- -----
 
@@ -61,10 +86,9 @@ class AutoLoan extends Loan {
 
 var myCar = new AutoLoan()
 console.log(myCar.interest);
-//----------- ----------- RACHAEL'S EXAMPLE: ----------- ----------- -----------
-//Challenge 1
-//Story: As a programmer, I can make a car.
-//Write a variable called myCar which is an instance of the class Car
+//----------- ----------- CLASS INHERITANCE CHALLENGES: ----------- ----------
+//(1)Story: As a programmer, I can make a car.
+//(1a)Write a variable called myCar which is an instance of the class Car
 
   class Car {
     constructor (model, year, wheels) {
@@ -73,27 +97,33 @@ console.log(myCar.interest);
     this.wheels = 4
     }
     carProfile () {
-      return `This is a ${this.model} year: ${this.year} has ${this.wheels} wheels `
+      return `This is a ${this.model}, year: ${this.year}, and has ${this.wheels} wheels.`
     }
   }
     var myCar = new Car()
-  //  Story: As a programmer, I can give my car a model on initialization.
-//The model for the car class can be "generic car"
+//(2)Story: As a programmer, I can give my car a model on initialization.
+//(2a)The model for the car class can be "generic car"
   console.log(myCar.carProfile());
 
-  //Story: As a programmer, I can give my car a year on initialization.
-  //The year for the car class can be "myCar year"
+//(3)Story: As a programmer, I can give my car a year on initialization.
+//(3a)The year for the car class can be "myCar year"
 
-  //Story: As a programmer, I can tell how many wheels myCar has.
-  //Calling the method wheels will return 4
+//(4)Story: As a programmer, I can tell how many wheels myCar has.
+//(4a)Calling the method wheels will return 4
 
-//   Story: As a programmer, I can make a Tesla car.
-// class Tesla inherits from class Car
-// Create an object called myTesla which is a instance of class Tesla
-  class Tesla {
+//(4)Story: As a programmer, I can make a Tesla car.
+//(4b)Note: class Tesla inherits from class Car - use the two JS keywords, "extends" & "super". Create an object called myTesla which is a instance of class Tesla
+  class Tesla extends Car {
     constructor () {
-      super ()
+      super()
+      this.model = "Tesla"
+      this.year = 2020
     }
   }
     var myTesla = new Tesla
-  console.log(myTesla());
+  console.log(myTesla.carProfile());
+//(5)Story:As a programmer, I can give my Tesla a model on initialization.
+//(5a) The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
+
+//(6)Story:As a programmer, I can give my Tesla a model on initialization.
+//(6a) The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
