@@ -40,22 +40,46 @@
 
 //Challenge 2
 
-class Latte {
-  constructor (numOfShots = 5, flavor = "caramel", milkType = "2% milk") {
-    this.flavor = flavor
-    this.milkType = milkType
-    this.numOfShots = numOfShots
-  }
+// class Latte {
+//   constructor (numOfShots = 5, flavor = "caramel", milkType = "2% milk") {
+//     this.flavor = flavor
+//     this.milkType = milkType
+//     this.numOfShots = numOfShots
+//   }
 
-  latteProfile(){
-    return `${this.flavor} latte: ${this.milkType}, ${this.numOfShots} esspresso.`
-    //return `${this.flavor} latte: ${this.milkType}, ${this.numOfShots} 
+//   latteProfile(){
+//     return `${this.flavor} latte: ${this.milkType}, ${this.numOfShots} esspresso.`
+//     //return `${this.flavor} latte: ${this.milkType}, ${this.numOfShots} 
+//   }
+// }
+
+// var singleShot = new Latte(1)
+// console.log(singleShot.latteProfile());
+
+// var hazelnutLatte = new Latte(2, "hazelnut", "almond milk")
+// console.log(hazelnutLatte.latteProfile());
+
+//Challenge 3
+
+class Cylinder {
+  constructor (radius, height, unitType) {
+    this.radius = radius,
+    this.height = height,
+    this.unitType = unitType;
+  }
+  //Methods
+  volumeCalc() {
+    let volume = (3.1415*((this.radius)*(this.radius))*(this.height));
+    return `The volume of this cylinder is ${volume.toFixed(4)} ${this.unitType} cubed.`;
   }
 }
 
-var singleShot = new Latte(1)
-console.log(singleShot.latteProfile());
 
-var hazelnutLatte = new Latte(2, "hazelnut", "almond milk")
-console.log(hazelnutLatte.latteProfile());
+var cylinder1 = new Cylinder(1.5,2, "cm");
+console.log(cylinder1.volumeCalc());
 
+var cylinder2 = new Cylinder(3.25,12.2, "inches");
+console.log(cylinder2.volumeCalc());
+
+var cylinder3 = new Cylinder(4, 30, "mm");
+console.log(cylinder3.volumeCalc());
