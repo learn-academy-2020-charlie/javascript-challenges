@@ -163,6 +163,10 @@ class Tesla extends Car{
   acceleration(){
     return this.speed += 10
   }
+
+  braking(){
+    return this.speed -= 7
+  }
 }
 
 var myTesla = new Tesla("electric car")
@@ -187,6 +191,15 @@ class Toyota extends Car {
   constructor (model, year) {
     super(model, year)
   }
+
+  acceleration(){
+    return this.speed += 5
+  }
+
+  braking(){
+    return this.speed -= 2
+  }
+
 }
 
 var myToyota = new Toyota()
@@ -232,7 +245,21 @@ class Volkswagen extends Car {
 
 // Story: As a programmer, I can speed my Tesla up by 10 per acceleration.
 
-console.log(myTesla.speed)
-console.log(myTesla.acceleration())
-console.log(myTesla.acceleration())
-console.log(myTesla.acceleration())
+// console.log(myTesla.speed)
+// console.log(myTesla.acceleration())
+// console.log(myTesla.acceleration())
+// console.log(myTesla.acceleration())
+
+//Story: As a programmer, I can slow my Tesla down by 7 per braking.
+//console.log(myTesla.speed)
+//console.log(myTesla.acceleration())
+//console.log(myTesla.braking())
+
+
+//Story: As a programmer, I can speed my Toyota up by 5 per acceleration.
+
+//Story: As a programmer, I can slow my Toyota down by 2 per braking.
+
+console.log(myToyota.speed)
+console.log(myToyota.acceleration())
+console.log(myToyota.braking())
