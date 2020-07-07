@@ -65,11 +65,52 @@ var animals = [
   ]
 //   Create a function that takes in any array of objects and returns a new array with only those of type cat.
 
-const catOnly = (array) => {
-   let array = (animals.filter(value => {
-       return value.type == "cat"
-   })
-}
- console.log(catOnly(animals));
+// const catOnly = (array) => {
+//    return animals.filter(value => {
+//        return value.type == "cat"
+//    })
+// }
+//  console.log(catOnly(animals));
  
-//   Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+//   Using the same array of objects above. Create a function that returns a new array with only the names of the animals. 
+
+const catOnly = () => {
+    return animals.map(value => {
+        return value.name
+    })
+ }
+ console.log(catOnly(animals));
+
+ let author = {
+    name: "H. G. Wells",
+    genre: "science fiction"
+}
+// Write the code that destructures the author object and makes the following work:
+var { name, genre} = author
+
+console.log(`${name} is a ${genre} author`)
+//--> "H. G. Wells is a science fiction author"
+
+let pokeOne = {
+    species: "Charmandar",
+    pokemon_type: "Fire"
+}
+
+let pokeTwo = {
+    species: "Magikarp",
+    pokemon_type: "Water"
+}
+
+
+//Write a function called describePokemon() that take an object like the ones above and uses destructuring to return a description of the Pokemon such that:
+var {species, pokemon_type} = pokeOne
+var {species, pokemon_type} = pokeTwo
+
+const describePokemon = () => {
+    return `${species} is a ${pokemon_type} pokemon`
+}
+
+console.log(describePokemon(pokeOne))
+//--> "Charmandar is a Fire pokemon"
+console.log(describePokemon(pokeTwo))
+//--> "Magikarp is a Water pokemon"
