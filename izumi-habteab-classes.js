@@ -62,3 +62,38 @@ class AutoLoan extends Loan {
 var myCar = new AutoLoan()
 console.log(myCar.interest);
 //----------- ----------- RACHAEL'S EXAMPLE: ----------- ----------- -----------
+//Challenge 1
+//Story: As a programmer, I can make a car.
+//Write a variable called myCar which is an instance of the class Car
+
+  class Car {
+    constructor (model, year, wheels) {
+    this.model = "generic car"
+    this.year = "myCar year"
+    this.wheels = 4
+    }
+    carProfile () {
+      return `This is a ${this.model} year: ${this.year} has ${this.wheels} wheels `
+    }
+  }
+    var myCar = new Car()
+  //  Story: As a programmer, I can give my car a model on initialization.
+//The model for the car class can be "generic car"
+  console.log(myCar.carProfile());
+
+  //Story: As a programmer, I can give my car a year on initialization.
+  //The year for the car class can be "myCar year"
+
+  //Story: As a programmer, I can tell how many wheels myCar has.
+  //Calling the method wheels will return 4
+
+//   Story: As a programmer, I can make a Tesla car.
+// class Tesla inherits from class Car
+// Create an object called myTesla which is a instance of class Tesla
+  class Tesla {
+    constructor () {
+      super ()
+    }
+  }
+    var myTesla = new Tesla
+  console.log(myTesla());
