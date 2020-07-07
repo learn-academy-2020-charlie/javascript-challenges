@@ -19,13 +19,14 @@
         return(
         <div>
           <h1>Welcome to Charlie Cohort!</h1>
+          <Instructors />
           <List />
           <Footer />
         </div>
         )
       }
     }
-    class List extends React. Component{
+    class List extends React.Component{
       render () {
         return (
           <div>
@@ -40,6 +41,20 @@
             <li>Trip</li>
             <li>Miguel</li>
           </ul>
+          </div>
+        )
+      }
+    }
+    class Instructors extends React.Component{
+      render () {
+        return (
+          <div>
+          <p>List of Instructors: </p>
+            <ol>
+            <li>Rachael</li>
+            <li>Andee</li>
+            <li>Sarah</li>
+            </ol>
           </div>
         )
       }
