@@ -113,14 +113,27 @@
 // Write a variable called myCar which is an instance of the class Car
 class Car{
   //constructor
-  constructor(model = "generic car", year = "myCar year"){
+  constructor(model = "generic car", year = "myCar year", lights = "off", turnSignal = "off", speed = 0){
     this.wheels = 4
     this.model = model
     this.year = year
+    this.lights = lights
+    this.signal = turnSignal
+    this.speed = speed
   }
 
   numberOfWheels(){
     return this.wheels
+  }
+
+  switchLights(){
+    if (this.lights == "off"){
+      return this.lights = "on"
+    } else {
+      return this.lights = "off"
+    }
+    
+
   }
 }
 
@@ -145,6 +158,10 @@ var myCar = new Car()
 class Tesla extends Car{
   constructor(model, year){
     super(model, year)
+  }
+
+  acceleration(){
+    return this.speed += 10
   }
 }
 
@@ -174,7 +191,7 @@ class Toyota extends Car {
 
 var myToyota = new Toyota()
 
-console.log(myToyota)
+//console.log(myToyota)
 
 // Story: As a programmer, I can give my Toyota a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
@@ -189,11 +206,33 @@ console.log(myToyota)
 // create an object called myVolkswagen which is a instance of class Volkswagen
 
 class Volkswagen extends Car {
-  constructor(model) {
-    super(model)
+  constructor(model, year) {
+    super(model, year)
   }
 }
 
 // Story: As a programmer, I can give my Volkswagen a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
 
+// Story: As a programmer, I can give my Volkswagen a year on initialization.
+// The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
+
+// Story: As a programmer, I can give all my cars a lights property. Lights start in the off position.
+
+// Story: As a programmer, I can turn the lights in all my cars on and off.
+// console.log(myToyota.lights)
+// console.log(myToyota.switchLights())
+// console.log(myToyota.switchLights())
+
+
+// Story: As a programmer, I can give all my cars a signal property. Turn signal starts in the off position.
+//console.log(myToyota.signal)
+
+// Story: As a programmer, I can determine the speed of a car. Speed starts at 0 mph.
+
+// Story: As a programmer, I can speed my Tesla up by 10 per acceleration.
+
+console.log(myTesla.speed)
+console.log(myTesla.acceleration())
+console.log(myTesla.acceleration())
+console.log(myTesla.acceleration())
