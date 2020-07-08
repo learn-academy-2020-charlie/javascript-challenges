@@ -132,9 +132,12 @@ class Car{
     } else {
       return this.lights = "off"
     }
-    
-
   }
+
+  carInfo(){
+    return `This car has ${this.wheels} wheels, it is a ${this.year} ${this.model}, and the lights are ${this.lights}. The signal is ${this.signal} and it is currently at ${this.speed} MPH.`
+  }
+
 }
 
 var myCar = new Car()
@@ -222,6 +225,14 @@ class Volkswagen extends Car {
   constructor(model, year) {
     super(model, year)
   }
+
+  acceleration () {
+    return this.speed += 7
+  }
+
+  brakes() {
+    return this.speed -= 5
+  }
 }
 
 // Story: As a programmer, I can give my Volkswagen a model on initialization.
@@ -260,6 +271,24 @@ class Volkswagen extends Car {
 
 //Story: As a programmer, I can slow my Toyota down by 2 per braking.
 
-console.log(myToyota.speed)
-console.log(myToyota.acceleration())
-console.log(myToyota.braking())
+// console.log(myToyota.speed)
+// console.log(myToyota.acceleration())
+// console.log(myToyota.braking())
+
+// Story: As a programmer, I can speed my Volkswagen up by 7 per acceleration.
+
+// Story: As a programmer, I can slow my Volkswagen down by 5 per braking.
+
+var Volks = new Volkswagen ("Beetle", 2012)
+console.log(Volks.speed)
+console.log(Volks.acceleration())
+console.log(Volks.brakes())
+
+
+// Story: As a programmer, I can call upon a carInfo method that will tell me all the information about a car.
+
+// The method can be created in the parent class and accessed by all child classes
+
+console.log(myCar.carInfo())
+console.log(myTesla.carInfo())
+console.log(Volks.carInfo())
