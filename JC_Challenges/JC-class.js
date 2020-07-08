@@ -162,14 +162,27 @@
 //Challenge 11
 // Story: As a programmer, I can give my Volkswagen a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
+//Challenge 12
+// Story: As a programmer, I can give my Volkswagen a year on initialization.
+// The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
+//Challenge 13
+//Story: As a programmer, I can give all my cars a lights property. Lights start in the off position.
 
-class Car{
+
+class Car{ 
   constructor(){
     this.model = "Tesla"
     this.year = 2005
+    this.lights = "off"
   }
   wheels(){
     return 4
+  }
+  changeLights(){
+    if (this.lights === "off") {
+    return "Lights off"
+  } else {
+    return "Light on"
   }
 }
 
@@ -188,10 +201,10 @@ class Toyota extends Car{
 }
 
 class Volkswagen extends Car{
-  constructor(model){
-    super(model)
+  constructor(model, year){
+    super(model, year)
     // this.model = "Volkswagen"
-    this.year = 1978
+    //this.year = 1978
   }
 }
 // var myCar = new Car("generic car", 1995)
