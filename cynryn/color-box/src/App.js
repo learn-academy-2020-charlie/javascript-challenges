@@ -63,44 +63,60 @@ class App extends Component{
   render(){ 
     return(
       <>
+      <div id="master">
       <h1><u>The Ultimate Color Selector!</u></h1>
-
-
-      <button id = "testbutton" onClick = { this.handleChange1 }>
+      <body>
+      <button 
+      style={{backgroundColor: `${this.state.currentColor1}` }} 
+      id = "testbutton" onClick = { this.handleChange1 }>
       <div>
         { this.state.currentColor1 }
       </div>
       </button>
 
-      <button id = "testbutton" onClick = { this.handleChange2 }>
+      <button 
+      style={{backgroundColor: `${this.state.currentColor2}` }} 
+      id = "testbutton" onClick = { this.handleChange2 }>
       <div>
       { this.state.currentColor2 }
       </div>
       </button>
 
-      <button id = "testbutton" onClick = { this.handleChange3 }>
+      <button 
+      style={{backgroundColor: `${this.state.currentColor3}` }} 
+      id = "testbutton" onClick = { this.handleChange3 }>
       <div>
       { this.state.currentColor3 }
       </div>
       </button>
 
-      <button id = "testbutton" onClick = { this.handleChange4 }>
+      <button 
+      style={{backgroundColor: `${this.state.currentColor4}` }} 
+      id = "testbutton" onClick = { this.handleChange4 }>
       <div>
       { this.state.currentColor4 }
       </div>
       </button>
 
-      <button id = "testbutton" onClick = { this.handleChange5 }>
+      <button 
+      style={{backgroundColor: `${this.state.currentColor5}` }} 
+      id = "testbutton" onClick = { this.handleChange5 }>
       <div>
       { this.state.currentColor5 }
       </div>
       </button>
 
-      <button id = "testbutton" onClick = { this.handleChange6 }>
+      <button 
+      style={{backgroundColor: `${this.state.currentColor6}` }} 
+      id = "testbutton" onClick = { this.handleChange6 }>
       <div>
       { this.state.currentColor6 }
       </div>
       </button>
+      </body>
+      </div>
+
+    <footer>Coded by Cynthia and Ryan!</footer>
 
 
       {/* <div>
