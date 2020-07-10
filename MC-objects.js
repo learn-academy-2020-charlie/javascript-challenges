@@ -1,4 +1,4 @@
-//Challenge #1
+// Challenge #1
 // Consider this variable:
 // Write the code that accesses the first name of the person object.
 // Write the code that accesses the last name of the person object.
@@ -57,30 +57,30 @@
 // Challenge #4 
 //   Create a function that takes in any array of objects and returns a new array with only those of type cat.
 //   Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
-// var animals = [
-//     { name: "Waffles", type: "dog", age: 12 },
-//     { name: "Fluffy", type: "cat", age: 14 },
-//     { name: "Spelunky", type: "dog", age: 4 },
-//     { name: "Hank", type: "cat", age: 11 },
-// ]
+var animals = [
+    { name: "Waffles", type: "dog", age: 12 },
+    { name: "Fluffy", type: "cat", age: 14 },
+    { name: "Spelunky", type: "dog", age: 4 },
+    { name: "Hank", type: "cat", age: 11 },
+]
 
-// //declare a function that takes in an array
-// //
-// const getCats = (array) => {
-//     return array.filter(value => {
-//         return value.type === "cat"
-//     })
-// }
+//declare a function that takes in an array
+//
+const getCats = (array) => {
+    return array.filter(value => {
+        return value.type === "cat"
+    })
+}
 
-// console.log(getCats(animals));
+console.log(getCats(animals));
 
 
-// const getNames = (array) => {
-//     return array.map(value => {
-//         return value.name
-//     })
-// }
+const getNames = (array) => {
+    return array.map(value => {
+        return value.name
+    })
+}
 
-// console.log(getNames(animals));
+console.log(getNames(animals));
 
 

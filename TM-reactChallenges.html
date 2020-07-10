@@ -16,45 +16,44 @@
     class App extends React.Component{
       render(){
         return(
-        <div>
+          <div>
+          <Header />
           <h1>Hello React!</h1>
-          <Cohort />
-          <Classmates />
-          <Devs />
-        </div>
+          <ClassmateList />
+          <Footer />
+          </div>
         )
       }
     }
-    class Cohort extends React.Component{
+    class Header extends React.Component {
         render (){
-            return(
-                <h3>Charlie Cohort</h3>
+            return (
+                <h1>Charlie Cohort</h1>
             )
         }
-    
     }
-    class Classmates extends React.Component{
+    class ClassmateList extends React.Component {
         render (){
-            return(
+            return (
                 <ul>
-                <h3>Class Mates Names</h3>
-                   <li>Cynthia</li> 
-                   <li>Jakob</li> 
-                   <li>Miguel</li> 
-                   <li>Trip</li> 
-                   <li>Selam</li> 
-                   <li>Ryan I</li> 
-                   <li>Ryan K</li> 
-                   <li>Erica</li> 
+                    <li>Trip</li>
+                    <li>Miguel</li>
+                    <li>Ryan I</li>
+                    <li>Ryan K</li>
+                    <li>Jakob</li>
+                    <li>Erica</li>
+                    <li>Selam</li>
+                    <li>Cynthia</li>
                 </ul>
-                
             )
         }
     }
-    class Devs extends React.Component{
+    class Footer extends React.Component {
         render (){
-            return(
-                <footer>Cynthia & Jakob</footer>
+            return (
+                <footer>
+                    <p>Created by: Trip and Miguel</p>
+                </footer>
             )
         }
     }
