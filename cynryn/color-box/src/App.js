@@ -116,7 +116,8 @@ class App extends Component{
       </body>
       </div>
 
-    <footer>Coded by Cynthia and Ryan!</footer>
+      <footer>Coded by Cynthia and Ryan!</footer>
+
 
 
       {/* <div>
@@ -124,7 +125,7 @@ class App extends Component{
       </div> */}
       </>
     )
-    }
+  }
 }
 
 export default App;
