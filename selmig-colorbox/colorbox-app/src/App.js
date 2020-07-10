@@ -13,23 +13,22 @@ import './App.css';
 class App extends Component {
   constructor (props) {
     super (props)
-    this.state = {
-      currentColor: "",
-      colorOptions: ["green", "blue", "yellow", "red", "purple", "orange"]
 
-    }
   }
   render () {
     return (
       <>
       <h1>Color Box!</h1>
-      {/* Instead of "CLick me!" make the current color the name of the button and set it to state.currentColor*/}
-      <button onClick={this.handleChange}>
-      "CLick me!"
-      </button>
+      {/* Instead of "CLick me!" make the current color the name of the button and set it to state.currentColor 
         <div>
         {this.state.currentColor}
-        </div>
+        </div>*/}
+
+      <Button />
+      <Button />
+      <Button />
+
+       
       </>
     )
   }
