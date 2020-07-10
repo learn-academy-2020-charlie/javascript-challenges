@@ -23,6 +23,7 @@
 //
 // console.log(person.aboutThisPerson())
 
+//Challenge 2
 //Consider this variable:
 // var product = {
 //   name: "chair", price: 14.99
@@ -52,12 +53,72 @@
 
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 
-var lunch = {
-    name: "PB and Banana",
-    type: "sandwich",
-    ingredients: ["bread", "peanut butter", "banana"],
-    displayLunch: function(){
-        return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients[0]}, ${this.ingredients[1]}, ${this.ingredients[2]}.`
-    }
- }
- console.log(lunch.displayLunch())
+// var lunch = {
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"],
+//     displayLunch: function(){
+//         return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients[0]}, ${this.ingredients[1]}, ${this.ingredients[2]}.`
+//     }
+//  }
+//  console.log(lunch.displayLunch())
+
+// Challenge 4
+// Consider this variable:
+var animals = [
+  { name: "Waffles", type: "dog", age: 12 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 },
+]
+//Create a function that takes in any array of objects and returns a new array with only those of type cat.
+
+const onlyCats = (array) => {
+    return array.filter(value => value.type == "cat")
+}
+
+//console.log(onlyCats(animals))
+
+//Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+
+
+const onlyNames = (array) => {
+    return array.map(value => value.name)
+}
+
+//console.log(onlyNames(animals))
+
+//Challenge 5
+let author = {
+    name: "H. G. Wells",
+    genre: "science fiction"
+}
+// Write the code that destructures the author object and makes the following work:
+//console.log(`${name} is a ${genre} author`)
+//--> "H. G. Wells is a science fiction author"
+var { name, genre } = author
+//console.log(`${name} is a ${genre} author`)
+
+// Challenge 6
+//Consider this variable:
+let pokeOne = {
+    species: "Charmandar",
+    pokemon_type: "Fire"
+}
+
+let pokeTwo = {
+    species: "Magikarp",
+    pokemon_type: "Water"
+}
+// Write a function called describePokemon() that take an object like the ones above and uses destructuring to return a description of the Pokemon such that:
+// console.log(describePokemon(pokeOne))
+// --> "Charmandar is a Fire pokemon"
+// console.log(describePokemon(pokeOne))
+// --> "Magikarp is a Water pokemon"
+
+const describePokemon = (pokemon) => {
+    var {species, pokemon_type} = pokemon
+    return `${ species } is a ${ pokemon_type } pokemon`
+}
+console.log(describePokemon(pokeOne))
+console.log(describePokemon(pokeTwo))
