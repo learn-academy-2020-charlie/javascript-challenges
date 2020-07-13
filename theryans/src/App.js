@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Dice from './Components/Dice.js';
+import Log from  './Components/Log.js';
 
 class App extends Component{
   constructor(props){
@@ -14,16 +15,18 @@ class App extends Component{
   handleChange = () => {
     let newRoll = Math.floor(Math.random() * 7)
     this.setState({ currentRoll : newRoll })
+    this.state.rollLog.push (this.state.currentRoll)
   }
   render() {
     return(
       <>
       <h1>Dice</h1>
-      <Dice 
+      <Dice
       currentRoll={ this.state.currentRoll }
       dice={ this.state.dice }
       handleChange={ this.handleChange }
       />
+      {this.state.rollLog.map(value => <Log currentRoll = {value} />)}
       </>
     )
 }
