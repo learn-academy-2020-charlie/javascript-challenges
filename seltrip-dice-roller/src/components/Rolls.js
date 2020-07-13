@@ -2,15 +2,11 @@ import React, {Component} from 'react';
 
 
 class Rolls extends Component {
-  constructor (props){
-    super (props)
-    }
     render(){
       return (
         <div>
           <h1>Previous Rolls!</h1>
-          <p>
-          </p>
+            {this.props.previousRolls.map(value => <p>{value}</p>)}
         </div>
       )
     }
