@@ -15,7 +15,7 @@ class App extends Component {
   //method for new roll <Dice />
     newRoll = () => {
     let newDie = this.state.rollOptions[Math.floor(Math.random()*6)]
-    // console.log("new die", newDie);
+    console.log("new die", newDie);
       let prevNumArr = this.state.previousRolls.push(newDie)
         //this.setState({currentRoll: newDie})
         //console.log("this is current roll", this.state.currentRoll);
