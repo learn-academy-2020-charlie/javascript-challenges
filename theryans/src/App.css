@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -11,6 +12,25 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+#button {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  font-size: 22px;
+}
+
+#button:hover {
+  background-color: #212121; 
+  background-image: url("https://webstockreview.net/images/dice-clipart-number-3-2.png");
+}
+
+#text {
+  font-size: 22px;
 }
 
 .App-header {

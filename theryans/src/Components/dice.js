@@ -1,23 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class App extends Component {
-  constructor(props){
-    super(props)
-      this.state = {
-        currentRoll
-      }
+class Dice extends Component{
+ render(){
+    return(
+      <>
+        <button id="button" onClick = { this.props.handleChange }>{ this.props.currentRoll }</button>
+      </>
+    )
+  }
 
   }
-}
-
-render() {
-  return(
-    <>
-      {this.props.currentRoll}
-      <button>Click To Roll</button>
-    </>
-  )
-}
 
 
-export default
+
+
+
+export default Dice

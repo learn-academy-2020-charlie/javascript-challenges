@@ -2,14 +2,12 @@ import React, {Component} from 'react';
 
 
 class Dice extends Component {
-  constructor (props){
-    super (props)
-    }
     render(){
       return (
         <div>
-          <h1>Click box to roll!</h1>
-          <button onClick={this.props.newRoll}>{this.props.currentRoll}</button>
+          <h1>Roll!</h1>
+          <button onClick={this.props.newRoll}>Click Me!!</button>
+          <p>{this.props.currentRoll}</p>
         </div>
       )
     }
